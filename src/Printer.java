@@ -1,12 +1,5 @@
 import java.util.List;
-
-/**
- * Printer.java
- * All formatted console output lives here.
- * Keeps Main.java clean and readable.
- */
 public class Printer {
-
     // ANSI colour codes
     private static final String RESET  = "\u001B[0m";
     private static final String BOLD   = "\u001B[1m";
@@ -16,7 +9,6 @@ public class Printer {
     private static final String RED    = "\u001B[31m";
     private static final String PINK   = "\u001B[35m";
     private static final String WHITE  = "\u001B[37m";
-
     public static void banner() {
         System.out.println(YELLOW + BOLD);
         System.out.println("  ╔══════════════════════════════════════════════════════╗");
@@ -28,7 +20,6 @@ public class Printer {
         System.out.println("  ╚══════════════════════════════════════════════════════╝");
         System.out.println(RESET);
     }
-
     public static void menu() {
         System.out.println(CYAN + BOLD + "\n  ── MAIN MENU ────────────────────────────────────" + RESET);
         System.out.println("   1. Enter relatives manually");
